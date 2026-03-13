@@ -216,7 +216,7 @@ Request body:
 
 ```json
 {
-  "name": "Alice"
+  "name": "A"
 }
 ```
 
@@ -225,7 +225,7 @@ Response:
 ```json
 {
   "id": 1,
-  "name": "Alice"
+  "name": "A"
 }
 ```
 
@@ -241,7 +241,7 @@ Response:
 [
   {
     "id": 1,
-    "name": "Alice"
+    "name": "A"
   }
 ]
 ```
@@ -263,7 +263,7 @@ Response:
 ```json
 {
   "id": 1,
-  "name": "Alice"
+  "name": "A"
 }
 ```
 
@@ -277,7 +277,7 @@ Request body:
 
 ```json
 {
-  "name": "Alice Updated"
+  "name": "A Updated"
 }
 ```
 
@@ -286,7 +286,7 @@ Response:
 ```json
 {
   "id": 1,
-  "name": "Alice Updated"
+  "name": "A Updated"
 }
 ```
 
@@ -314,7 +314,7 @@ Request body:
 
 ```json
 {
-  "email": "alice@gmail.com"
+  "email": "a123@gmail.com"
 }
 ```
 
@@ -324,7 +324,7 @@ Response:
 {
   "id": 1,
   "person_id": 1,
-  "email": "alice@gmail.com"
+  "email": "a123@gmail.com"
 }
 ```
 
@@ -341,7 +341,7 @@ Response:
   {
     "id": 1,
     "person_id": 1,
-    "email": "alice@gmail.com"
+    "email": "a123@gmail.com"
   }
 ]
 ```
@@ -457,15 +457,3 @@ PostgreSQL + SeaORM
 - Closer to production architecture
 
 ---
-
-## Notes
-
-- `AppState` now stores a shared `DatabaseConnection`
-- SeaORM entities are generated from the actual database schema
-- Old in-memory repository code is no longer required after full migration
-
----
-
-## Author
-
-Developed as part of the **iVedha Rust Backend Assessment / Upskilling Program**.
